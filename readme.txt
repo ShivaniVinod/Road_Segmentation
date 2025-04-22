@@ -4,7 +4,7 @@ This project performs semantic segmentation of roads using U-Net on the [Massach
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 - Training, validation, and test images are preprocessed to 512x512 resolution.
 - Masks are binary (road vs background).
@@ -15,7 +15,7 @@ This project performs semantic segmentation of roads using U-Net on the [Massach
 
 ---
 
-## 🧠 Model Architecture
+## Model Architecture
 
 - Model: **U-Net** (encoder-decoder)
 - Loss: Binary Cross-Entropy
@@ -24,7 +24,7 @@ This project performs semantic segmentation of roads using U-Net on the [Massach
 
 ---
 
-## 🔁 Pipeline
+##  Pipeline
 
 1. **Preprocess dataset**
 2. **Build and train U-Net**
@@ -35,7 +35,7 @@ This project performs semantic segmentation of roads using U-Net on the [Massach
 
 ---
 
-## 🧪 Results
+##  Results
 
 Sample predictions are saved in the `sample_predictions/` folder:
 
@@ -45,14 +45,14 @@ Sample predictions are saved in the `sample_predictions/` folder:
 
 ---
 
-## 🧠 Road Type Classification
+##  Road Type Classification
 
 Using basic region features (`area`, `eccentricity`, `solidity`, `extent`) with a Random Forest Classifier to predict:
 - `Highway`, `Main Road`, `Street`, `Dirt Road`
 
 ---
 
-## 💾 Model & Export
+## Model & Export
 
 - Best trained U-Net is saved as:
   - `unet_best_model.keras`
@@ -64,7 +64,7 @@ Using basic region features (`area`, `eccentricity`, `solidity`, `extent`) with 
 ## 📦 Run Locally
 
 ```bash
-git clone https://github.com/your-username/road-segmentation-unet.git
-cd road-segmentation-unet
+git clone https://github.com/your-username/Road_Segmentation.git
+cd Road_Segmentation
 pip install -r requirements.txt
 python main.py
