@@ -4,7 +4,7 @@ This project performs semantic segmentation of roads using U-Net on the [Massach
 
 ---
 
-##  Dataset
+## Dataset
 
 - Training, validation, and test images are preprocessed to 512x512 resolution.
 - Masks are binary (road vs background).
@@ -24,7 +24,7 @@ This project performs semantic segmentation of roads using U-Net on the [Massach
 
 ---
 
-##  Pipeline
+## Pipeline
 
 1. **Preprocess dataset**
 2. **Build and train U-Net**
@@ -35,17 +35,17 @@ This project performs semantic segmentation of roads using U-Net on the [Massach
 
 ---
 
-##  Results
+## Results
 
 Sample predictions are saved in the `sample_predictions/` folder:
 
 | Original | Ground Truth | Prediction |
 |----------|--------------|------------|
-| ![](sample_predictions/train_sample_0.png) | ... | ... |
+| ![](sample_predictions/train_sample_0.png) | _..._ | _..._ |
 
 ---
 
-##  Road Type Classification
+## Road Type Classification
 
 Using basic region features (`area`, `eccentricity`, `solidity`, `extent`) with a Random Forest Classifier to predict:
 - `Highway`, `Main Road`, `Street`, `Dirt Road`
@@ -61,7 +61,7 @@ Using basic region features (`area`, `eccentricity`, `solidity`, `extent`) with 
 
 ---
 
-## 📦 Run Locally
+## Run Locally
 
 ```bash
 git clone https://github.com/your-username/Road_Segmentation.git
